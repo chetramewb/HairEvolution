@@ -1,0 +1,609 @@
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+$bgcolor: #9e2499;
+$activecolor:#cf3939;
+$textcolor: darkblue;
+$spancolor:#9e2499;
+$mycolor:#282828;
+$color:#fff;
+$btncolor:#ff5241;
+$foorterbgcolor:#f6f5f4;
+$fontsize: 16px; 
+$h1font-size:96px; $font-weight:700;
+$h2font-size:35px;  $font-weight:400;  
+$h3font-size:30px;  $font-weight:600;
+$h4font-size:25px;
+$h5font-size:20px;
+
+@font-face {
+    font-family: 'Gotham Narrow Book';
+    src: url('../font/GothamNarrow-Book.eot');
+    src: local('../Gotham Narrow Book'), local('GothamNarrow-Book'),
+        url('../font/GothamNarrow-Book.eot?#iefix') format('embedded-opentype'),
+        url('../font/GothamNarrow-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '.Gotham Narrow';
+    src: url('../font/GothamNarrow-Bold.eot');
+    src: local('../font/Gotham Narrow Bold'), local('GothamNarrow-Bold'),
+        url('../font/GothamNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/GothamNarrow-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Narrow';
+    src: url('../GothamNarrow-Medium.eot');
+    src: local('../Gotham Narrow Medium'), local('GothamNarrow-Medium'),
+        url('../GothamNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../GothamNarrow-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '/Gotham Narrow';
+    src: url('../font/GothamNarrow-Black.eot');
+    src: local('../font/Gotham Narrow Black'), local('GothamNarrow-Black'),
+        url('../font/GothamNarrow-Black.eot?#iefix') format('embedded-opentype'),
+        url('../font/GothamNarrow-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font/Gotham Narrow';
+    src: url('../font/GothamNarrow-Light.eot');
+    src: local('../font/Gotham Narrow Light'), local('GothamNarrow-Light'),
+        url(' ../font/GothamNarrow-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/GothamNarrow-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font/Gotham Narrow Ultra';
+    src: url('../font/GothamNarrow-Ultra.eot');
+    src: local('../font/Gotham Narrow Ultra'), local('GothamNarrow-Ultra'),
+        url('../font/GothamNarrow-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('../font/GothamNarrow-Ultra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font/Gotham Narrow';
+    src: url('../font/GothamNarrow-Thin.eot');
+    src: local('../font/Gotham Narrow Thin'), local('GothamNarrow-Thin'),
+        url('../font/GothamNarrow-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../font/GothamNarrow-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+body{font-size:$fontsize;  margin: 0 auto;   font-family: '.Gotham Narrow'; background:transparent }
+.container {width:1170px; margin: 0 auto; box-sizing:border-box}
+  header{  
+.top-header {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+    padding: 20px 0px; 
+    .first-side {
+        width: 64%;
+        display: block;
+        float: left;
+
+        .logo img {
+            float: left;
+            padding-right: 80px;
+        }
+
+        .form-inline{ position: relative;
+            .form-control {
+                width: 382px;
+                margin-top: 50px;
+                padding: 20px 10px;
+                position: relative;
+                height: 47px;
+            }
+
+            .btn.btn-primary {
+                position: absolute;
+                right: 10px;
+                bottom: 5px;
+                background: none;
+                border: none;
+            }
+            
+
+        }
+    } /*****first-side********/
+    .last-side {
+        width: 36%;
+        margin-left: 0px;
+        margin-top: 56px;
+        text-align: end;
+        float: right;
+
+        .social-header { 
+            display: block;float: left; margin-right: 30px; 
+    li{ list-style: none;
+    a { padding: 0px 2px; text-decoration: none;
+    
+    }
+}
+        }
+
+
+        .english {
+            border: 1px solid
+            gray;
+            display: inline;
+            padding: 2px 10px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .icon-second-last {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .icon-last {
+            text-align: end;
+            position: relative;
+
+            ::before{content: "1";
+                content: "1";
+                position: absolute;
+                top: -10px;
+                right: -13px;
+                width: 16px;
+                height: 16px;
+                background:$activecolor;
+                border-radius: 100%;
+                font-size: 12px;
+                text-align: center;
+                color: white;
+            
+            }
+        }
+
+
+
+
+    }/***********last-side********/
+}
+
+
+
+.main-header {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+    background:$bgcolor;
+    
+
+    .navbar.navbar-expand-lg {
+        padding: 0px;
+    }
+    .active {
+        background:$activecolor;
+    }
+    .navbar-nav {
+        li{ list-style: none; padding: 0px 10px;
+        a {color:
+            white;
+            font-size: 18px;
+            line-height: 26px;
+            font-family: 'Gotham Narrow Book';
+            font-weight: normal;}
+        a:hover {background:$activecolor; }
+        
+        
+        }
+    }
+}
+
+}/******header*****/
+
+@media only screen and (max-width:1199px) {
+  
+ header{
+     .top-header{
+         .first-side{ width: 55%;  
+         .logo{
+             img{padding-right:20px !important;}
+         
+            }
+
+            .form-inline .form-group  { width:100%;
+                .form-control{  
+                width: 340px !important;}
+
+            }
+            } /******first********/
+
+            .last-side{ width:45%; }
+     } /**-****top****/
+     .main-header{  
+
+        .navbar-nav li {
+            padding: 0px 1px;
+        }
+     }/****main***/
+ }
+
+ 
+
+
+}
+
+
+#banner {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background:#f9f8f8;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-image: none;
+    padding: 70px 0px;
+    text-align: center;
+    background-image: url(../images/banner-image.png);
+    background-repeat: no-repeat;
+    height: 627px;
+    background-position: center;
+    object-fit: cover;
+
+    .first-banner-heading{
+        img{width:100%; margin-top:100px;}
+
+    }
+
+    .second-banner-heading   { padding-top: 100px;
+        h1{font-size: 96px;
+            color:#ff5241;
+            line-height: 55.31px;}
+
+            span {
+                font-size: 89px;
+                color: #292929;
+                font-weight:500;
+                line-height: 83.1px;
+            }
+
+            samp {
+                font-size: 68.83px;
+                color: #9e2499;
+                font-weight: 600;
+                line-height: 63.92px;
+            }
+    
+    }
+
+}
+
+
+#soins {
+	display: block;
+text-align: center;
+padding: 0px 0px 100px;
+    
+
+    .soins-heading {
+        padding-bottom: 65px;
+        display: block;
+        h2 {
+            font-size:$h2font-size;
+            line-height: 26px;
+            font-weight: 500;
+            color:$mycolor;
+            
+            span{color: $spancolor;}
+            
+            &::after{ background: red;
+                width: 50px;
+                height: 3px;
+                position: absolute;
+                content: "";
+                top: 55px;
+                left: 0;
+                right: 0;
+                margin: 0 auto; }
+        }
+
+       
+    }
+
+    .Adult-heading {
+        position: relative;
+        margin-bottom: 25px;
+
+        img{width:100%;}
+
+        .Adult-overlay {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: 0 auto;
+            color:white;
+            height: 40px;
+            width: 92%;
+            max-width: 100%;
+            padding-top: 5px;
+            font-weight: 400;
+        }
+    }
+
+}
+ 
+ 
+
+
+#Evolpe {
+    width:100%; display:block; overflow: hidden; background-image: url(../images/Evolope-bg-img.png);
+     background-repeat:no-repeat; background-size:cover; background-position: center;  height:570px; position: relative;
+
+     .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+    }
+
+    .Evolpe-heading { position: relative;
+        h4 { font-size: 25px;
+
+            color:#282828;
+            line-height: 42px;
+            font-weight: 400;
+            width: 39%;
+            letter-spacing: 1px;
+            margin-bottom: 60px;
+
+
+            &::after{    
+            background:$btncolor; 
+            width: 50px;
+            height: 4px;
+            position: absolute;
+            content: "";
+            top: 102px;
+            left: 0; margin: 0 auto;}
+        }
+
+        a {
+            font-size: 18.17px;
+            background: #ff5241;
+            color: #fff;
+            padding: 15px 15px;
+            line-height: 30px;
+            text-decoration: none;
+            display: block;
+            max-width: 18%;
+            width:100%;
+            text-align: center;
+            border-radius: 3px;
+            &:hover{background:$bgcolor; transition: all ease-in-out 0.5s; }
+        }
+    }
+
+}
+
+/****************Gallery*************/
+#Gallery {
+	width: 100%;
+	overflow: hidden;
+	padding: 50px 0px;
+    text-align: center;
+    
+    
+    .g-heading {
+        padding: 50px 0px;
+    h4{font-size:$h4font-size;
+       color:$mycolor;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    span{color: $spancolor;}
+    &::after{
+        background:$btncolor;
+        width: 50px;
+        height: 4px;
+        position: absolute;
+        content: "";
+        top: 102px;
+        left: 0;
+        right:0;
+        margin: 0 auto;
+ 
+    }
+
+    }
+
+    }
+
+    .image-headingg {
+        margin-top: 50px;
+        display: block;
+        position: relative;
+        img{width:100%;  }
+        .overlay-img1 {
+            position: absolute;
+            left: 0;
+            right: 15px;
+            top: 0px;
+            background: #f9f9f9db;
+            height:0;
+            opacity: 0;
+            transition: all ease-in-out 0.5s;
+            .overlay-inner {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            
+            
+
+            h3 {
+                line-height: 53px;
+                font-weight: 400;
+                color:$textcolor;
+            }
+            h5 {
+                font-size:$h5font-size;
+                line-height: 30px;
+                font-weight: 400;
+            }
+            a {
+                line-height: 30px;
+                text-decoration: underline;
+                color:$btncolor;
+            }
+             &:hover.overlay-img1{   transition: all ease 0.5s; opacity: 1; height: 100%; cursor: pointer;}
+       
+    }
+    }
+
+    
+}
+
+
+#nerwslatter {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+    padding: 50px 0px;
+    position: relative;
+    
+    &::after {
+        background-image: url(../images/news-bg.png); background-repeat: no-repeat; background-size:cover;
+        object-fit: cover; position: absolute; right:0px;
+
+    }
+    
+
+    .news-heading {
+        display: block;
+        overflow: hidden;
+    
+    h4{font-size: $h4font-size; line-height: 24px; font-weight: 500; float: left; padding-top:15px; letter-spacing: 2px;
+    span{color: $spancolor;}
+    }
+    .form-newsletter{ float: right;
+        .form-controls {
+            width: 411px;
+            padding: 20px 10px;
+            position: relative;
+            height: 47px;
+            max-width: 100%;
+ }
+        .Subscribe {
+            font-size: 18.17px;
+            background: #ff5241;
+            color: #fff;
+            padding: 10px 70px;
+            line-height: 30px;
+            text-decoration: none;
+            text-align: center;
+            border: none;
+            border-radius: 3px;
+            &:hover{background:$bgcolor; transition: all ease-in-out 0.5s; }
+        }
+    }
+    
+    }
+}
+
+
+
+
+footer {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+    padding: 50px 0px;
+    background:$foorterbgcolor;
+
+
+    .col-heading { position: relative;
+        h5{font-size: $h5font-size; color:$bgcolor; line-height: 25.6px; padding-left: 15px; margin-bottom: 30px;
+            &::after{
+                background: #ff5241;
+                width: 30px;
+                height: 3px;
+               position: absolute;
+               content: "";
+               top: 40px;
+               left: 29px;
+               margin: 0 auto;
+            }
+        }
+
+        .social-text { padding-left: 15px; float: left; position: relative;
+            li{list-style: none; line-height: 28px; padding:0px 15px;}
+            a {
+                color:$mycolor;
+                font-size: 15px;
+                padding: 0;
+                text-decoration: none;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    background-image: url(../images/angle-right.png);
+                    width: 6px;
+                    height: 9px;
+                    left: 15px;
+                   
+                    line-height: 83px;
+                    margin-top: 10px;
+                   
+                }
+                &:hover{color:$spancolor; }
+            }
+        }
+        .social-footer { padding-left: 15px;
+            li{list-style: none;}
+        }
+
+
+
+
+
+
+    }
+
+}
+
+
+
+#copyright {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	background:$bgcolor;
+    padding: 20px 0px;
+    p {
+        margin-bottom: 0px;
+        color:$mycolor;
+    }
+}
