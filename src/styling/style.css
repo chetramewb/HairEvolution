@@ -11706,8 +11706,154 @@ header .main-header {
       header .top-header .last-side {
         width: 45%; }
     header .main-header .navbar-nav li {
-      padding: 0px 1px; } }
+      padding: 0px 1px; }
+  #Evolpe {
+    background-position: 70% 0% !important; }
+    #Evolpe .Evolpe-heading h4 {
+      width: 48% !important; }
+    #Evolpe .Evolpe-heading a {
+      max-width: 25% !important; }
+  /*******Evolpe*******/
+  #nerwslatter .news-heading .form-newsletter .form-controls {
+    width: unset !important; }
+  /***********news***************/ }
 
+@media only screen and (max-width: 991px) {
+  body {
+    overflow-x: hidden; }
+  header {
+    /********top-header*****/ }
+    header .top-header {
+      /********first-side********/
+      /*******last*******/ }
+      header .top-header .first-side {
+        width: 100%; }
+        header .top-header .first-side .form-inline.search-form .form-control {
+          width: 100% !important; }
+      header .top-header .last-side {
+        width: 100%; }
+        header .top-header .last-side .social-header {
+          margin-right: 5px;
+          padding-left: 0px; }
+  /******header*****/
+  #banner {
+    background: #f9f8f8;
+    background-image: none !important;
+    padding: 70px 0px;
+    margin-bottom: 50px;
+    height: unset !important; }
+    #banner .second-banner-heading {
+      padding-top: 0px !important; }
+  /****banner***/
+  #Evolpe .Evolpe-heading h4 {
+    width: 70% !important; }
+  #Evolpe .Evolpe-heading a {
+    width: 29% !important; }
+  /*****evoolpe***/
+  #Gallery .image-headingg .overlay-img1 h3 {
+    font-size: 22px; }
+  #Gallery .image-headingg .overlay-img1 h5 {
+    font-size: 16px !important; }
+  /***gallery**/
+  #nerwslatter {
+    text-align: center; }
+    #nerwslatter .news-heading h4 {
+      float: unset !important;
+      padding-bottom: 20px !important; }
+    #nerwslatter .news-heading .form-newsletter {
+      float: unset !important; }
+  /*******news*******/
+  footer .row {
+    display: block; }
+  footer .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 50%;
+    float: left; } }
+
+@media only screen and (max-width: 767px) {
+  #banner h1 {
+    font-size: 70px !important; }
+    #banner h1 span {
+      font-size: 69px !important; }
+    #banner h1 samp {
+      font-size: 48px !important; }
+  /******banner***/
+  #Evolpe .Evolpe-heading h4 {
+    width: 90% !important; }
+  #Evolpe .Evolpe-heading a {
+    max-width: 100% !important;
+    width: 50% !important; }
+  #Gallery {
+    padding: 0px 0px; }
+    #Gallery .row {
+      display: block; }
+    #Gallery .col.image-headingg img {
+      width: 480px;
+      height: 449px;
+      object-fit: cover;
+      max-width: 100%; }
+    #Gallery .col.image-headingg .overlay-img1 {
+      position: absolute;
+      left: 0;
+      right: 0px;
+      top: 0px;
+      background: #f9f9f9db;
+      height: 0;
+      opacity: 0;
+      transition: all ease-in-out 0.5s;
+      width: 480px !important;
+      max-width: 100%;
+      margin: 0 auto; }
+  /******gallery**/
+  #nerwslatter .news-heading .form-newsletter .form-controls {
+    width: 100% !important;
+    margin-bottom: 20px !important; }
+  /***news**/
+  footer .col {
+    max-width: 100%;
+    float: left; } }
+
+/*****767*****/
+@media only screen and (max-width: 575px) {
+  header {
+    /****top-header***/ }
+    header .top-header .first-side .logo {
+      display: flex;
+      overflow: hidden;
+      text-align: center;
+      justify-content: center;
+      width: 100%; }
+    header .top-header .first-side .form-inline.search-form .btn.btn-primary {
+      bottom: 25px; } }
+
+/****575***/
+@media only screen and (max-width: 480px) {
+  #Evolpe {
+    text-align: center; }
+    #Evolpe .Evolpe-heading h4 {
+      width: 95% !important;
+      font-size: 20px !important; }
+      #Evolpe .Evolpe-heading h4::after {
+        right: 0px !important; }
+    #Evolpe .Evolpe-heading a {
+      max-width: 100% !important;
+      width: 100% !important; } }
+
+/****480****/
+@media only screen and (max-width: 375px) {
+  header .top-header .last-side .social-header li {
+    padding: 0px 0px; }
+  header .top-header .last-side .icon-second-last {
+    margin-right: 0px; }
+  #Evolpe .Evolpe-heading h4 {
+    width: 100% !important;
+    font-size: 17px !important; } }
+
+/****375********/
+/************************************banner**********************************/
 #banner {
   width: 100%;
   display: block;
@@ -11875,7 +12021,7 @@ header .main-header {
     #Gallery .image-headingg .overlay-img1 {
       position: absolute;
       left: 0;
-      right: 15px;
+      right: 0px;
       top: 0px;
       background: #f9f9f9db;
       height: 0;
