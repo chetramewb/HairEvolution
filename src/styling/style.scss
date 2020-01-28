@@ -231,6 +231,14 @@ body{font-size:$fontsize;  margin: 0 auto;   font-family: '.Gotham Narrow'; back
 }/******header*****/
 
 @media only screen and (max-width:$largescreen) {
+    body{overflow-x: hidden;}
+    .container-fluid {
+        width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
   
  header{
      .top-header{
@@ -282,7 +290,7 @@ body{font-size:$fontsize;  margin: 0 auto;   font-family: '.Gotham Narrow'; back
 
 
 @media only screen and (max-width:$medium-devicedesktop) {
-    body{overflow-x: hidden;}
+  
 
     header{
 

@@ -11690,6 +11690,14 @@ header .main-header {
 
 /******header*****/
 @media only screen and (max-width: 1199px) {
+  body {
+    overflow-x: hidden; }
+  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
   header {
     /**-****top****/
     /****main***/ }
@@ -11719,8 +11727,6 @@ header .main-header {
   /***********news***************/ }
 
 @media only screen and (max-width: 991px) {
-  body {
-    overflow-x: hidden; }
   header {
     /********top-header*****/ }
     header .top-header {
